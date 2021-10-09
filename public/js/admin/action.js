@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $('#example').DataTable();
     $("#admin-login").on("submit", function (e) {
         e.preventDefault();
         $("#login-users").text("connecting....");

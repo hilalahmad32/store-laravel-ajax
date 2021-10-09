@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // $('#example').DataTable()
     $("#login").on("submit", function (e) {
         e.preventDefault();
         $("#login-users").text("connecting....");
