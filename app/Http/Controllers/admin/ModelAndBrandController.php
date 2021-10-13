@@ -37,18 +37,6 @@ class ModelAndBrandController extends Controller
         $output = "";
         $models = ModelAndBrand::all();
         if (count($models) > 0) {
-            $output .= "
-            <div class='table-responsive'>
-            <table class='table table-bordered'>
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Model</th>
-                        <th>Brand</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>";
             foreach ($models as $model) {
                 $output .= "
                     <tr>
@@ -62,9 +50,6 @@ class ModelAndBrandController extends Controller
                     </tr>
                     ";
             }
-            $output .= "</tbody>
-            </table>
-        </div>";
             echo $output;
         }
     }

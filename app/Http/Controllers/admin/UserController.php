@@ -47,23 +47,6 @@ class UserController extends Controller
 
         $users = User::all();
         if (count($users) > 0) {
-            $output .= "
-            <div class='table-responsive'>
-            <table class='table table-bordered'>
-                <thead>
-                    <tr>
-                        <th>First name</th>
-                        <th>Last name</th>
-                        <th>Email</th>
-                        <th>Locaiton</th>
-                        <th>Phone</th>
-                        <th>Model</th>
-                        <th>Brand</th>
-                        <th>Part</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>";
             foreach ($users as $user) {
                 $output .= "
                     <tr>
@@ -82,9 +65,6 @@ class UserController extends Controller
                     </tr>
                     ";
             }
-            $output .= "</tbody>
-            </table>
-        </div>";
             echo $output;
         }
     }

@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('#example').DataTable();
+    
+    $("#example").DataTable();
+
     $("#admin-login").on("submit", function (e) {
         e.preventDefault();
         $("#login-users").text("connecting....");
@@ -339,8 +341,8 @@ $(document).ready(function () {
     }
     Order();
 
-    $(document).on("click","#approve",function(){
-        const id=$(this).data("id");
+    $(document).on("click", "#approve", function () {
+        const id = $(this).data("id");
         $.ajax({
             url: "/admin/approve",
             type: "GET",
@@ -355,8 +357,8 @@ $(document).ready(function () {
             }
         });
     })
-    $(document).on("click","#reject",function(){
-        const id=$(this).data("id");
+    $(document).on("click", "#reject", function () {
+        const id = $(this).data("id");
         $.ajax({
             url: "/admin/reject",
             type: "GET",

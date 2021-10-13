@@ -16,7 +16,21 @@
 
         <h4 class="text-center" id="loading-model"></h4>
         <div class="container">
-            <div id="model-data"></div>
+
+            <div class='table-responsive'>
+                <table class='table table-bordered display' id="example">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Model</th>
+                            <th>Brand</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="model-data"></tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         {{-- add customar model --}}
@@ -68,8 +82,8 @@
                     <div class="modal-body">
                         <form id="update-model">
                             @csrf
-                         <h4 class="text-center" id="loading"></h4>
-                           <div id="edit-model"></div>
+                            <h4 class="text-center" id="loading"></h4>
+                            <div id="edit-model"></div>
                             <div class="form-group">
                                 <button class="btn btn-success w-100" id="model-update" type="submit">Update</button>
                             </div>

@@ -65,6 +65,7 @@
     <script src="{{ asset('js/admin/action.js') }}"></script>
     <script src="{{ asset('js/customar/action.js') }}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
 </body>
 
 </html>
